@@ -1,0 +1,154 @@
+.section1 {
+  background-image: url("js.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 10% 5%;
+}
+
+.waviy {
+  display: inline-block;
+  position: relative;
+}
+
+.waviy span {
+  display: inline-block;
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgb(177, 177, 56);
+  background: linear-gradient(red, gold);
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+.mediat {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .mediat i {
+    margin: 0 15px;
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 0.3s;
+  }
+  
+  .mediat i:hover {
+    transform: scale(1.2);
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+ 
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back {
+    background: linear-gradient(red, gold);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .section3 {
+    display: flex;
+    margin: auto;
+  }
+  
+  /* Style personnalisé des barres de progression */
+  .progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .progress-bar-inner {
+    height: 20px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  
+  .html {
+    background-color: #f16529;
+  }
+  .css {
+    background-color: #2965f1;
+  }
+  .tailwind {
+    background-color: #38bdf8;
+  }
+  .bootstrap {
+    background-color: #563d7c;
+  }
+  .javascript {
+    background-color: #f7df1e;
+    color: black;
+  }
+  .reactjs {
+    background-color: #61dafb;
+    color: black;
+  }
+  .oracle {
+    background-color: #f80000;
+  }
+  .sql-server {
+    background-color: #e13c3c;
+  }
+  .php {
+    background-color: #777bb3;
+  }
+  .mongodb {
+    background-color: #47a248;
+  }
+  .firebase {
+    background-color: #ffcb2d;
+    color: black;
+  }
+  .windev {
+    background-color: #f4975b;
+  }
+  
